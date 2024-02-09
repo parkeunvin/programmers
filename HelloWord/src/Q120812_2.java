@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class P120812_2 {
+public class Q120812_2 {
     public static void main(String[] args) {
         
 

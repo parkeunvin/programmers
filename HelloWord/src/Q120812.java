@@ -1,38 +1,43 @@
-import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Q120812{
-
-    public static void main(String[] args){
-        int[] array ={1, 2, 3, 3, 3, 4,4,4};
-        int max = 0 ;
-        int rtn = -1;
-        int a;
-        HashMap<Integer, Integer> num = new HashMap<Integer, Integer>();
+public class Q120812 {
+    public static void main(String[] args) {
+        // HashMap 생성
+        HashMap<Integer, Integer> map1 = new HashMap<>();
+        int[] array = { 1, 2, 3, 3, 3, 4 };
+        int max = array[0];
+        int same = 0;
 
         for (int i=0; i<array.length; i++){
-            if (num.containsKey(array[i])) {
+            int num;
+            if (map1.containsKey(array[i])){
+                num = map1.get(array[i]) + 1;
 
-                a= num.get(array[i]);
-                num.replace(array[i], a + 1);
-                if(num.get(array[i])>max){
-                    max = num.get(array[i]);
-                    rtn = 0 ;
-            }else if(num.get(array[i])==max){
-                rtn = 1;
+                System.out.println(i+" 번째 " + map1);
+
+                if(num>map1.get(max)){
+                    max=array[i];
+                    same=0;
+                    System.out.print("i : "+ i +", max1 : " + max + ", num : " + num + ", same : " + same);
+                    
+                }else if(num==map1.get(max)){
+                    same=1;
+                    System.out.print("i : "+ i +", max2 : " + max + ", num : " + num + ", same : " + same);
+                }
+
+                
+                map1.replace(array[i],num);
+
+            }else{
+                map1.put(array[i],1);
             }
-        }else {
-            num.put(array[i], 1);
+
+
         }
+        // 결과 출력
+        System.out.println();
+        System.out.println(map1);
+        System.out.println(same);
+        System.out.println(max);
     }
-
-     if (rtn == 0){
-
-     }else{
-        for(int i : num.keyset()){
-            
-        }
-
-        }
-    
 }

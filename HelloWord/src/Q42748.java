@@ -1,4 +1,4 @@
-public class L42748 {
+public class Q42748 {
 
     public static void main(String[] args){
         
