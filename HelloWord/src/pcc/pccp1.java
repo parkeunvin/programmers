@@ -1,4 +1,4 @@
-package pccp;
+package pcc;
 
 public class pccp1 {
     public static void main(String[] args){
