@@ -1,27 +1,19 @@
 public class Q120868 {
     
     public static void main(String[] args){
-        int[] sides = {11,7};
+        int[] sides = {3,6};
 
-        solution(sides);
+        //solution(sides);
+        System.out.println(solution(sides));
     }
 
 
     public static int solution(int[] sides) {
         int answer = 0;
-        int max=0;
-        int min=0;
-
-        if(sides[0]>sides[1]){
-            max=sides[0];
-            min=sides[1];
-        }else{
-            max=sides[1];
-            min=sides[0];
-        }
-
-        for(int i=min; i<max)        
-
+        
+            answer=sides[0]+sides[1]-Math.abs(sides[0]-sides[1])-1;
+            System.out.println(Math.abs(sides[0]-sides[1]));
+            System.out.println(sides[0]+sides[1]);
 
 
         return answer;
