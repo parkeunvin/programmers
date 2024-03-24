@@ -7,55 +7,53 @@ public class Q172928 {
     }
 
     public static int[] solution(String[] park, String[] routes) {
-        int[] answer = {};
-        //System.out.println(park[0].substring(0,1));
-        int[][] location=new int[park.length][park.length];
-        int st_location_X=0;
-        int st_location_Y=0;
-        for(int i=0; i<park.length; i++){
-
-            for(int j=0; j<park.length; j++){
-                switch (park[i].substring(j,j+1)) {
-                    case "S":
-                        st_location_X=i;
-                        st_location_Y=j;
-                        break;
-                    case "O":
-                        location[i][j]=1;
-                    break;
-                    default:
-                        location[i][j]=0;
-                        break;
-                }
+        int sx = 0;
+        int sy = 0;
+        
+        char[][] arr = new char[park.length][park[0].length()];
+        
+        for(int i = 0; i < park.length; i++){
+            arr[i] = park[i].toCharArray();
+            
+            if(park[i].contains("S")){
+                sy = i;
+                sx = park[i].indexOf("S");
             }
         }
-        System.out.println(st_location_X);
-        System.out.println(st_location_Y);
-
-        // for(int i=0; i<routes.length; i++){
-        //     int spaceIndex = routes[i].indexOf(" ");
-        //     switch (routes[i].substring(0)) {
-        //         case "N":
-        //         st_location_X-=Integer.valueOf(routes[i].substring(spaceIndex + 1));
-        //         break;
-        //         case "S":
-        //         st_location_X+=Integer.valueOf(routes[i].substring(spaceIndex + 1));
-        //         break;
-        //         case "W":
-        //         st_location_Y-=Integer.valueOf(routes[i].substring(spaceIndex + 1));
-        //         break;
-        //         default:
-        //         st_location_Y+=Integer.valueOf(routes[i].substring(spaceIndex + 1));
-        //             break;
-        //     }
-        // }
-
-
-        // for(int i=0; i<routes.length; i++){
-
-        // }
-
+    
+        for(String st : routes){
+            String way = st.split(" ")[0];
+            int len = Integer.parseInt(st.split(" ")[1]);
+            
+            int nx = sx;
+            int ny = sy;
+            
+            for(int i = 0; i < len; i++){
+                if(way.equals("E")){
+                    nx++;
+                }
+                if(way.equals("W")){
+                    nx--;
+                }
+                if(way.equals("S")){
+                    ny++;
+                }
+                if(way.equals("N")){
+                    ny--;
+                }
+                if(nx >=0 && ny >=0 && ny < arr.length && nx < arr[0].length){
+                    if(arr[ny][nx] == 'X'){
+                        break;
+                    }
+                    if(i == len-1){
+                        sx = nx;
+                        sy = ny;
+                    }
+                }
+            }
+        }       
+        
+        int[] answer = {sy, sx};
         return answer;
     }
-
 }
