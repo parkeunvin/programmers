@@ -1,12 +1,10 @@
 import java.util.Arrays;
 
 public class Q42746 {
-
-    public static void main(String[] args) {
-        //int[] numbers={3,30,34,5,9};
-        int[] numbers={6,10,2};
-
-
+    public static void main(String[] args){
+        
+        int[] numbers = new int[]{3, 40, 34, 5, 9};
+        
         solution(numbers);
     }
 
@@ -34,4 +32,5 @@ public class Q42746 {
        
         return answer.toString();
     }
+
 }
