@@ -1,0 +1,161 @@
+{
+    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+    // 기존 특성에 대한 설명을 보려면 가리킵니다.
+    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Q120812",
+            "request": "launch",
+            "mainClass": "Q120812",
+            "projectName": "JsWorkspace_10fc2374"
+        },
+        {
+            "type": "java",
+            "name": "Q120812_2",
+            "request": "launch",
+            "mainClass": "Q120812_2",
+            "projectName": "JsWorkspace_10fc2374"
+        },
+        {
+            "type": "java",
+            "name": "Q120846",
+            "request": "launch",
+            "mainClass": "Q120846",
+            "projectName": "JsWorkspace_10fc2374"
+        },
+        {
+            "type": "java",
+            "name": "Q120861",
+            "request": "launch",
+            "mainClass": "Q120861",
+            "projectName": "JsWorkspace_10fc2374"
+        },
+        {
+            "type": "java",
+            "name": "Q120868",
+            "request": "launch",
+            "mainClass": "Q120868",
+            "projectName": "JsWorkspace_10fc2374"
+        },
+        {
+            "type": "java",
+            "name": "Q12922",
+            "request": "launch",
+            "mainClass": "Q12922",
+            "projectName": "JsWorkspace_10fc2374"
+        },
+        {
+            "type": "java",
+            "name": "Q172928",
+            "request": "launch",
+            "mainClass": "Q172928",
+            "projectName": "JsWorkspace_10fc2374"
+        },
+        {
+            "type": "java",
+            "name": "Q176963",
+            "request": "launch",
+            "mainClass": "Q176963",
+            "projectName": "JsWorkspace_10fc2374"
+        },
+        {
+            "type": "java",
+            "name": "Q181832",
+            "request": "launch",
+            "mainClass": "Q181832",
+            "projectName": "JsWorkspace_10fc2374"
+        },
+        {
+            "type": "java",
+            "name": "Q1845",
+            "request": "launch",
+            "mainClass": "Q1845",
+            "projectName": "JsWorkspace_10fc2374"
+        },
+        {
+            "type": "java",
+            "name": "Q42746",
+            "request": "launch",
+            "mainClass": "Q42746",
+            "projectName": "JsWorkspace_10fc2374"
+        },
+        {
+            "type": "java",
+            "name": "Q42747",
+            "request": "launch",
+            "mainClass": "Q42747",
+            "projectName": "JsWorkspace_10fc2374"
+        },
+        {
+            "type": "java",
+            "name": "Q42748",
+            "request": "launch",
+            "mainClass": "Q42748",
+            "projectName": "JsWorkspace_10fc2374"
+        },
+        {
+            "type": "java",
+            "name": "Q552288",
+            "request": "launch",
+            "mainClass": "Q552288",
+            "projectName": "JsWorkspace_10fc2374"
+        },
+        {
+            "type": "java",
+            "name": "Q76501",
+            "request": "launch",
+            "mainClass": "Q76501",
+            "projectName": "JsWorkspace_10fc2374"
+        },
+        {
+            "type": "java",
+            "name": "Q86053",
+            "request": "launch",
+            "mainClass": "Q86053",
+            "projectName": "JsWorkspace_10fc2374"
+        },
+        {
+            "type": "java",
+            "name": "Q87389",
+            "request": "launch",
+            "mainClass": "kakao.Q87389",
+            "projectName": "JsWorkspace_10fc2374"
+        },
+        {
+            "type": "java",
+            "name": "openchat",
+            "request": "launch",
+            "mainClass": "kakao.openchat",
+            "projectName": "JsWorkspace_10fc2374"
+        },
+        {
+            "type": "java",
+            "name": "pcce250125",
+            "request": "launch",
+            "mainClass": "pcc.pcce250125",
+            "projectName": "JsWorkspace_10fc2374"
+        },
+        {
+            "type": "java",
+            "name": "pcce250126",
+            "request": "launch",
+            "mainClass": "pcc.pcce250126",
+            "projectName": "JsWorkspace_10fc2374"
+        },
+        {
+            "type": "java",
+            "name": "pccp1",
+            "request": "launch",
+            "mainClass": "pcc.pccp1",
+            "projectName": "JsWorkspace_10fc2374"
+        }
+    ]
+}

@@ -30,7 +30,7 @@ public class pccp340213 {
 
             switch (commands[i]) {
                 case "next":
-                    now = (video - now <= 10) ? 0 : now + 10;
+                    now = (video - now <= 10) ? video : now + 10;
                     now = time_check(now);
                     break;
                 case "prev":
